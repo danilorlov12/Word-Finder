@@ -1,0 +1,83 @@
+QPushButton {
+	padding: 5px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: #fff;
+}
+	
+QMainWindow {
+	background-image: url(Style/picture.png);
+}
+
+QSlider::groove:horizontal { 
+	height: 1px; 
+	background: #fff;
+}
+
+QSlider::handle:horizontal { 
+	width: 40px; 
+	margin-top: -20px; 
+	margin-bottom: -20px; 
+	border-radius: 20px; 
+	background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(118, 191, 255, 255), stop:0.7 rgba(118, 191, 255, 100));
+}
+
+QSlider::handle:horizontal:hover { 
+	background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(15, 102, 255, 255), stop:0.7 rgba(15, 102, 255, 100));
+}
+
+QComboBox {
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+QComboBox:editable {
+    background: grey;
+}
+
+QLCDNumber {
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	background: #000;
+}
+
+QLabel#labelStatus{
+	background: yellow;
+	text-align: center;
+}
+
+QListWidget {
+     show-decoration-selected: 1; /* расширяет диапазон выделения на всю ширину представления */
+ }
+
+ QListWidget::item:alternate {
+     background: #EEEEEE;
+ }
+
+ QListWidget::item:selected {
+     border: 1px solid #6a6ea9;
+ }
+
+ QListWidget::item:selected:!active {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #ABAFE5, stop: 1 #8588B2);
+ }
+
+ QListWidget::item:selected:active {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #6a6ea9, stop: 1 #888dd9);
+ }
+
+ QListWidget::item:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+ }
+
+	
